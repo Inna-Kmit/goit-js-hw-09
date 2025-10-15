@@ -1,0 +1,66 @@
+.feedback-form {
+  max-width: 480px;
+  margin: 0 auto;
+  padding: 24px;
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 16px;
+}
+
+.feedback-form label {
+  display: flex;
+  flex-direction: column;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+  color: #2e2f42;
+  line-height: 1.5;
+  text-align: left;
+  margin-bottom: 12px;
+}
+
+.feedback-form input,
+.feedback-form textarea {
+  margin-top: 8px;
+  padding: 12px;
+  font-size: 16px;
+  border: 1px solid hsl(0, 14%, 93%);
+  border-radius: 4px;
+  transition: border-color 0.3s, box-shadow 0.3s;
+  font-family: inherit;
+}
+
+.feedback-form input:focus,
+.feedback-form input:hover,
+.feedback-form textarea:focus,
+.feedback-form input:focus {
+  border-color: #000000;
+  box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.25);
+}
+
+.feedback-form button {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: 8px 16px;
+  width: 100px;
+  height: 40px;
+  font-size: 16px;
+  font-weight: 500;
+  font-family: 'Montserrat', sans-serif;
+  line-height: 1.5;
+  color: #fff;
+  background-color: #007bff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 250s ease-in-out;
+}
+
+.feedback-form button:hover,
+.feedback-form button:focus {
+  background-color: #007bfb;
+}
