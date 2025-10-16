@@ -38,11 +38,10 @@ function onFormSubmit(event) {
   event.preventDefault();
 
   if (!formData.email || !formData.message) {
-    return `Fill please all fields`;
+    alert(`Fill please all fields`);
+    return;
   }
-
-  //console.log(formData);
-
+  console.log('Form data submitted:', formData);
   clearFeedbackForm();
 }
 
@@ -51,5 +50,5 @@ function clearFeedbackForm() {
   feedbackForm.reset();
   formData.email = '';
   formData.message = '';
+  console.log('cleared form and localStorage');
 }
-//console.log('cleared form');
